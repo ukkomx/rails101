@@ -15,3 +15,9 @@ This workshop explores the basics of Ruby on Rails. It covers:
 - User authentication with Devise
 - Rails' assets pipeline
 - Landing page with products
+
+
+
+### Deploying with Heroku
+
+Sign up at https://heroku.com
