@@ -4,16 +4,20 @@
 
 <table>
   <thead>
+    <th>Nombre</th>
     <th>Cantidad</th>
     <th>Descripción</th>
     <th>Precio</th>
+    <th>Detalle</th>
   </thead>
   <tbody>
     <% @products.each do |p| %>
       <tr>
+        <td><%= p.name %></td>
         <td><%= p.quantity %></td>
         <td><%= p.description %></td>
         <td><%= p.price %></td>
+        <td><%= link_to 'Detalle', product_path(p) %></td>
       </tr>
     <% end %>
   </tbody>
