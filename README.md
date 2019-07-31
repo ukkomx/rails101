@@ -1,6 +1,8 @@
 # Rails 101 Workshop
 
-This project is the result of the workshop available at ukko.mx.
+This project is the result of the workshop available at: 
+
+[ukko.mx]: https://ukko.mx.	"Rails 101"
 
 This workshop explores the basics of Ruby on Rails. It covers:
 
