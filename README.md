@@ -1,24 +1,17 @@
-# README
+# Rails 101 Workshop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is the result of the workshop available at ukko.mx.
 
-Things you may want to cover:
+This workshop explores the basics of Ruby on Rails. It covers:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- MVC basics
+- The structure of a Rails app
+- The Gemfile
+- Creating a Rails appliaction for a simple online shop:
+  - Creating a Product model
+  - Creating logic and views for managing products
+  - Attaching images to product
+- RubyGems and gems
+- User authentication with Devise
+- Rails' assets pipeline
+- Landing page with products
