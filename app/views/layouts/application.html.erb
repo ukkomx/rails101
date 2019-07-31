@@ -10,13 +10,15 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <% if user_signed_in? %>
-      <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete %>
-      <%= link_to 'Usuarios', users_path %>
-      <%= link_to 'Productos', products_path %>
-    <% end %>
-    <%= yield %>
+    <div class='container'>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <% if user_signed_in? %>
+        <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete %>
+        <%= link_to 'Usuarios', users_path %>
+        <%= link_to 'Productos', products_path %>
+      <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>
