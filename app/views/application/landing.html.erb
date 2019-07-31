@@ -1,0 +1,29 @@
+<div class="jumbotron">
+  <h1 class="display-4">Mi tienda en línea</h1>
+  <hr class="my-4">
+  <p class="lead">
+    <%= link_to 'Iniciar Sesión', new_user_session_path, class: 'btn btn-primary btn-lg' %>
+  </p>
+</div>
+<div class='container'>
+  <div class='row'>
+    <div class='col-sm-12'>
+      <h2>Productos</h2>
+    </div>
+
+    <% @products.each do |product| %>
+      <div class='col-sm-12 col-lg-3 col-md-4'>
+        <div class="card w-100">
+          <% if product.picture.attached? %>
+            <%= image_tag product.picture, class: 'card-img-top', alt: product.name %>
+          <% end %>
+          <div class="card-body">
+            <h5 class="card-title"><%= product.name %></h5>
+            <p class="card-text"><%= product.description %>
+            <p class='badge badge-primary float-right'><%= number_to_currency(product.price) %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
