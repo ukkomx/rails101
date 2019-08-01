@@ -18,6 +18,25 @@ This workshop explores the basics of Ruby on Rails. It covers:
 
 
 
-### Deploying with Heroku
+### Settiing up Heroku
 
-Sign up at https://heroku.com
+1. Sign up at https://heroku.com
+2. Install Heroku CLI
+3. Login with heroku
+4. Enter `heroku create` from your app directory
+
+### Deploying with heroku
+
+To deploy your app enter the following command from your app directory. Your project must have git initialized for heroku to work.
+
+`git push heroku master`
+
+To setup the database and migrations run:
+
+`heroku run rails db:setup`
+
+Create user to login in the app:
+
+`heroku run rails c`
+
+`User.create(name: 'Admin', email: 'admin@test.com', password: '123456', password_confirmation: '123456')`
