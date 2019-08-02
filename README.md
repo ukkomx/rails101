@@ -33,7 +33,7 @@ To deploy your app enter the following command from your app directory. Your pro
 
 To setup the database and migrations run:
 
-`heroku run rails db:setup`
+`heroku run rails db:migrate`
 
 Create user to login in the app:
 
